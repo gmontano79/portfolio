@@ -20,11 +20,13 @@ background-image: url(./img/dark\ backgrouns.jpg);
   /* border: 3px solid rgb(238, 255, 0); */
   display: flex;
   position: relative;
+
 }
 .gminfo {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+
 
   /* border: 3px solid red; */
 }
@@ -45,6 +47,7 @@ background-image: url(./img/dark\ backgrouns.jpg);
   /* border: 3px solid rgb(0, 255, 76); */
   display: inline;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -139,10 +142,31 @@ main {
   width: 70%;
 }
 
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  ;
+}
+h3 {
+ display: flex;
+ flex-direction: column;
+ margin: auto;
+ padding: 5px;
+}
+.mockup {
+  height: 250px;
+  border: 5px solid rgb(87, 87, 87);
+  box-shadow: 10px 10 px 5px;
+  transition: all .2s ease-in-out; 
+}
+
 .mywork:hover {
   background-color: rgb(87, 99, 110);
 }
-
+.mockup:hover {
+  transform: scale(0.9);
+}
 /* CONTACT ME */
 .contactme {
   /* border: 3px solid red; */
