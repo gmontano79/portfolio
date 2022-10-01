@@ -2,3 +2,156 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+background-image: url(./img/dark\ backgrouns.jpg);
+  background-color: azure;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+   width: 80%;
+  margin: auto;
+}
+
+.bgimg {
+  position: absolute;
+}
+
+/* HEADER SECTION */
+.header {
+  padding: 20px;
+  background-color: rgb(204, 202, 202);
+  /* border: 3px solid rgb(238, 255, 0); */
+  display: flex;
+}
+.gminfo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  /* border: 3px solid red; */
+}
+
+#gmphoto {
+  height: 100px;
+  border: 2px solid aqua;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.gminfo h1 {
+  padding-left: 20px;
+}
+
+/* NAVIGATION MENU */
+.nav {
+  width: 80%;
+  /* border: 3px solid rgb(0, 255, 76); */
+  display: inline;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+p {
+  justify-content: flex-end;
+}
+
+/* MAIN SECTION */
+main {
+  background-color: rgb(112, 112, 112);
+  color: white;
+}
+/* MAIN SECTION BEGINING IMAGE */
+.wcimg {
+  position: relative;
+}
+
+.wcimg h2 {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+}
+.wcimg img {
+  width: 100%;
+  height: 80px;
+}
+
+/* ABOUT ME */
+.aboutme {
+  height: 500px
+  border: 3px solid red;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+.aboutme h2 {
+  width: 30%;
+  font-size: 2.5rem;
+  align-self: center;
+  /* border: 3px solid orange; */
+}
+.aboutme p {
+  border-left: 3px solid aqua;
+  width: 70%;
+  padding-left: 20px;
+}
+
+.aboutme:hover {
+  background-color: rgb(87, 99, 110);
+}
+
+/* MY WORK */
+
+.mywork {
+  /* border: 3px solid red; */
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+.mywork h2 {
+  width: 30%;
+  font-size: 2.5rem;
+  align-self: center;
+  /* border: 3px solid orange; */
+}
+.div-mywork {
+  border-left: 3px solid aqua;
+  width: 70%;
+}
+
+.mywork:hover {
+  background-color: rgb(87, 99, 110);
+}
+
+/* CONTACT ME */
+.contactme {
+  /* border: 3px solid red; */
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+.contactme h2 {
+  width: 30%;
+  font-size: 2.5rem;
+  align-self: center;
+}
+.contactlink {
+  /* border: 3px solid darkgrey; */
+  border-left: 3px solid aqua;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactlink p a {
+  text-decoration: none;
+
+}
+
+a:visited {
+  color: rgb(250, 252, 250);
+}
+  .contactme:hover {
+    background-color: rgb(87, 99, 110);
+  }
