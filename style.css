@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
 body {
 background-image: url(./img/dark\ backgrouns.jpg);
   background-color: azure;
@@ -11,6 +11,7 @@ background-image: url(./img/dark\ backgrouns.jpg);
    width: 80%;
   margin: auto;
 }
+
 
 
 /* HEADER SECTION */
@@ -111,6 +112,7 @@ main {
   width: 30%;
   font-size: 2.5rem;
   align-self: center;
+  
   /* border: 3px solid orange; */
 }
 .aboutme p {
@@ -206,16 +208,95 @@ a:visited {
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
-
-
-
   }
 
   h4 {
 
     color: white;
+    
   }
   .bwslogo{
     height: 38px;
     padding-top: 5px;
   }
+
+
+
+  /* MEDIA QUERY */
+
+ 
+  @media screen and (max-width: 700px) {
+    body {
+      background-color: blue;
+    }
+      
+
+    /* HEADER SECTION */
+    .header {
+   
+    }
+.gmphoto {
+  width :80%;
+}
+    .gminfo h1 {
+      font-size: 100%;
+    }
+    .nav {
+      display: flex;
+      flex-direction: column;
+    }
+.smlogos {
+  position: absolute;
+  bottom: -3px;
+}
+
+
+/* MAIN SECTION */
+.wcimg {
+
+ height: 50px; 
+ width: auto;
+}
+
+.wcimg h2 {
+  font-size: 90%;
+  bottom: 15px;
+  right: 15px;
+}
+
+
+
+      .aboutme h2, .mywork h2, .contactme h2 {
+        font-size: 70%;
+      }
+    
+      p {
+        font-size: 60%;
+      }
+
+      .mockup {
+        width: 100%;
+        height: auto;
+      }
+
+      .contactlink {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .contactlink p {
+        width: 80%;
+      }
+
+      h4 {
+        font-size: 30%;
+      }
+
+      .footerlogos {
+        height: 20px;
+      }
+      .bwslogo {
+        width: 10%;
+        height: auto;
+      }
+    }
