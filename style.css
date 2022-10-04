@@ -10,6 +10,7 @@ background-image: url(./img/dark\ backgrouns.jpg);
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
    width: 80%;
   margin: auto;
+  max-width: 1000px;
 }
 
 
@@ -18,7 +19,6 @@ background-image: url(./img/dark\ backgrouns.jpg);
 .header {
   padding: 20px;
   background-color: rgb(204, 202, 202);
-  /* border: 3px solid rgb(238, 255, 0); */
   display: flex;
   position: relative;
 
@@ -45,17 +45,42 @@ background-image: url(./img/dark\ backgrouns.jpg);
 /* NAVIGATION MENU */
 .nav {
   width: 80%;
-  /* border: 3px solid rgb(0, 255, 76); */
-  display: inline;
+    display: inline;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-p {
-  justify-content: flex-end;
+
+
+
+.nav a{
+  text-decoration: none;
+  color: rgb(97, 96, 96);
+  font-weight: bold;
+  font-size: 1.2em;
 }
+
+a:visited {
+  color: gray;
+}
+
+/* NAVIGATION MENU HOVER LINKS */
+
+.nav a:hover {
+  background-color: rgb(196, 243, 243);
+  padding: 20px;
+  color: darkblue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+
+/* GITHUB AND LINKEDIN LINKS */
+
 .smlogos{
  
   display: flex;
@@ -102,23 +127,24 @@ main {
 /* ABOUT ME */
 .aboutme {
   height: 500px
-  border: 3px solid red;
+ 
   padding: 30px;
   display: flex;
   justify-content: space-between;
   align-content: flex-end;
 }
 .aboutme h2 {
-  width: 30%;
+  width: 31.6%;
   font-size: 2.5rem;
+  padding-left: 40px;
   align-self: center;
-  
-  /* border: 3px solid orange; */
+
 }
 .aboutme p {
   border-left: 3px solid aqua;
   width: 70%;
-  padding-left: 20px;
+  padding: 20px ;
+  text-align: justify;
 }
 
 .aboutme:hover {
@@ -137,7 +163,7 @@ main {
   width: 30%;
   font-size: 2.5rem;
   align-self: center;
-  /* border: 3px solid orange; */
+ 
 }
 .div-mywork {
   border-left: 3px solid aqua;
@@ -157,9 +183,10 @@ h3 {
  padding: 5px;
 }
 .mockup {
+  
   height: 250px;
   border: 5px solid rgb(87, 87, 87);
-  box-shadow: 10px 10 px 5px;
+  box-shadow: 10px 10px 10px rgb(44, 44, 44);
   transition: all .2s ease-in-out; 
 }
 
@@ -187,6 +214,7 @@ h3 {
   width: 70%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .contactlink p a {
@@ -194,7 +222,7 @@ h3 {
 
 }
 
-a:visited {
+.contactlink a:visited {
   color: rgb(250, 252, 250);
 }
   .contactme:hover {
@@ -245,6 +273,11 @@ a:visited {
       display: flex;
       flex-direction: column;
     }
+
+    .nav a{
+      font-size: 1em;
+      ;
+    }
 .smlogos {
   position: absolute;
   bottom: -3px;
@@ -268,15 +301,19 @@ a:visited {
 
       .aboutme h2, .mywork h2, .contactme h2 {
         font-size: 70%;
+        
       }
     
       p {
         font-size: 60%;
+        padding-top:30px ;
+        padding-bottom: 80px;
       }
 
       .mockup {
         width: 100%;
         height: auto;
+ 
       }
 
       .contactlink {

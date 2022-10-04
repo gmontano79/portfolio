@@ -14,7 +14,7 @@ To use this page, simple you can navigate thru the different sections such as Ab
 
 The deployment application link is https://gmontano79.github.io/portfolio/
 
-![alt Page Screenshoot]()
+![alt Page Screenshoot](./img/portfoliopage-screenshot.JPG)
 
 ## Credits
 
