@@ -18,7 +18,13 @@ PROJECTS. THIS SECTION WILL UPDATED ONCE I CREATE NEW PROJECTS.
 
 The deployment application link is https://gmontano79.github.io/portfolio/
 
-![alt Page Screenshoot](./img/portfoliopage-screenshot.JPG)
+### **Desktop View**
+
+![alt Page Screenshoot - Desktop](./img/portfoliopage-screenshot.JPG)
+
+### **Mobile View**
+
+![alt Page Screenshoot - mobile](./img/portfoliopage-screenshot-mobile.JPG)
 
 ## Credits
 
