@@ -3,147 +3,165 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-background-image: url(./img/dark\ backgrouns.jpg);
-  background-color: azure;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-   width: 80%;
-  margin: auto;
-  max-width: 1000px;
+
+:root {
+  --textshadow: text-shadow: 2px 2px 3px rgb(69, 68, 68);
 }
 
+body {
+  background-image: url(./img/dark\ backgrouns.jpg);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 95%;
+  margin: auto;
+  max-width: 1000px;
 
+  border: 3px solid yellow;
+}
 
 /* HEADER SECTION */
 .header {
-  padding: 20px;
-  background-color: rgb(204, 202, 202);
-  display: flex;
-  position: relative;
+  padding: 10px;
 
+  background-color: rgb(204, 202, 202);
+
+  position: relative;
 }
+
 .gminfo {
   display: flex;
-  flex-direction: row-reverse;
+
   align-items: center;
 
-
-  /* border: 3px solid red; */
+  justify-content: flex-end;
 }
 
 #gmphoto {
   height: 100px;
   border: 2px solid aqua;
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 5px 5px 5px grey;
 }
 
 .gminfo h1 {
-  padding-left: 20px;
+  padding-left: 10px;
+  text-shadow: 2px 2px 3px rgb(69, 68, 68);
 }
 
 /* NAVIGATION MENU */
 .nav {
-  width: 80%;
-    display: inline;
+  margin-top: 10px;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding: 10px;
+  font-size: 10px;
 }
 
-
-
-.nav a{
+.nav a {
+  text-align: center;
   text-decoration: none;
   color: rgb(97, 96, 96);
   font-weight: bold;
   font-size: 1.2em;
+  flex-grow: 1;
+  flex-shrink: 2;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
 }
 
 a:visited {
   color: gray;
+  flex-grow: 1;
+  flex-shrink: 2;
 }
 
 /* NAVIGATION MENU HOVER LINKS */
 
 .nav a:hover {
   background-color: rgb(196, 243, 243);
-  padding: 20px;
+  padding: 2px;
   color: darkblue;
   font-weight: bold;
   text-decoration: none;
+  box-shadow: 3px 3px 10px grey;
 }
-
-
-
 
 /* GITHUB AND LINKEDIN LINKS */
 
-.smlogos{
- 
+.smlogos {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  height: 40px;
+  height: 39px;
   position: absolute;
-  right: 10px;
-  bottom: 5px;
-
-
+  right: -46px;
+  top: 42px;
+  transform: rotate(90deg);
 }
+
 .github {
-    width: 32px;
-    padding-right: 10px;
- }
- .linkedin {
+  width: 32px;
+  padding-right: 10px;
+}
+
+.linkedin {
   width: 82px;
 }
+
 /* MAIN SECTION */
 main {
   background-color: rgb(112, 112, 112);
   color: white;
 }
+
 /* MAIN SECTION BEGINING IMAGE */
 .wcimg {
   background-image: url(./img/R.jpg);
   opacity: 90;
   position: relative;
-  height: 80px;
+  height: 50px;
 }
 
 .wcimg h2 {
+  padding-left: 15px;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 15px;
+  right: 50px;
   color: white;
+  font-size: 1em;
 }
+
 .linksbar {
   width: 100%;
-  height: 80px;
+  height: 100%;
 }
 
 /* ABOUT ME */
 .aboutme {
-  height: 500px
- 
-  padding: 30px;
-  display: flex;
+  height: auto;
+  padding: 5px;
   justify-content: space-between;
   align-content: flex-end;
 }
-.aboutme h2 {
-  width: 31.6%;
-  font-size: 2.5rem;
-  padding-left: 40px;
-  align-self: center;
 
+.aboutme h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  display: block;
+  text-shadow: 3px 3px 5px rgb(20, 20, 20);
+  
 }
+
 .aboutme p {
-  border-left: 3px solid aqua;
-  width: 70%;
-  padding: 20px ;
+  width: 100%;
+  padding: 20px;
+  font-size: 0.8em;
   text-align: justify;
 }
 
@@ -156,184 +174,120 @@ main {
 .mywork {
   /* border: 3px solid red; */
   padding: 30px;
-  display: flex;
-  justify-content: center;
+
+
 }
+
 .mywork h2 {
-  width: 30%;
-  font-size: 2.5rem;
-  align-self: center;
- 
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgb(20, 20, 20);
+  padding-bottom: 20px;
 }
+.mywork h4 {
+font-size: 0.7em;
+padding: 10px 0;
+}
+span {
+ color: rgb(8, 8, 8);
+ font-weight: bold;
+ background-color: aqua;
+}
+
 .div-mywork {
-  border-left: 3px solid aqua;
-  width: 70%;
+ 
+  width: 100%;
 }
 
 .boxes {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  ;
+ width: 100%;
 }
+
 h3 {
- display: flex;
- flex-direction: column;
- margin: auto;
- padding: 5px;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
+
 .mockup {
-  
+
   height: 250px;
+  width: 100%;
   border: 5px solid rgb(87, 87, 87);
   box-shadow: 10px 10px 10px rgb(44, 44, 44);
-  transition: all .2s ease-in-out; 
+  transition: all 0.2s ease-in-out;
 }
 
 .mywork:hover {
   background-color: rgb(87, 99, 110);
 }
+
 .mockup:hover {
   transform: scale(0.9);
 }
+
 /* CONTACT ME */
 .contactme {
   /* border: 3px solid red; */
   padding: 30px;
-  display: flex;
-  justify-content: center;
-}
-.contactme h2 {
-  width: 30%;
-  font-size: 2.5rem;
-  align-self: center;
-}
-.contactlink {
-  /* border: 3px solid darkgrey; */
-  border-left: 3px solid aqua;
-  width: 70%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+
 }
 
-.contactlink p a {
+.contactme h2 {
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgb(20, 20, 20);
+  padding-bottom: 10px;
+;
+}
+
+.contactlink {
+
+  border-left: 3px solid aqua;
+  width: 100%;
+  padding-left: 10px;
+ 
+}
+
+.contactlink p {
+  font-size: 1em;
+  width: 100%;
   text-decoration: none;
+  padding-bottom: 5px;
+
+}
+
+.contactlink  a {
+  font-size: 1em;
+  width: 100%;
+  text-decoration: none;
+  padding-bottom: 30px;
 
 }
 
 .contactlink a:visited {
   color: rgb(250, 252, 250);
 }
-  .contactme:hover {
-    background-color: rgb(87, 99, 110);
-  }
 
-
-  /* FOOTER SECTION */
-  footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  h4 {
-
-    color: white;
-    
-  }
-  .bwslogo{
-    height: 38px;
-    padding-top: 5px;
-  }
-
-
-
-  /* MEDIA QUERY */
-
- 
-  @media screen and (max-width: 700px) {
-    body {
-      background-color: blue;
-    }
-      
-
-    /* HEADER SECTION */
-    .header {
-   
-    }
-.gmphoto {
-  width :80%;
-}
-    .gminfo h1 {
-      font-size: 100%;
-    }
-    .nav {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .nav a{
-      font-size: 1em;
-      ;
-    }
-.smlogos {
-  position: absolute;
-  bottom: -3px;
+.contactme:hover {
+  background-color: rgb(87, 99, 110);
 }
 
-
-/* MAIN SECTION */
-.wcimg {
-
- height: 50px; 
- width: auto;
+/* FOOTER SECTION */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.wcimg h2 {
-  font-size: 90%;
-  bottom: 15px;
-  right: 15px;
+.footer h4 {
+  color: white;
+  font-size: 0.5em;
 }
 
-
-
-      .aboutme h2, .mywork h2, .contactme h2 {
-        font-size: 70%;
-        
-      }
-    
-      p {
-        font-size: 60%;
-        padding-top:30px ;
-        padding-bottom: 80px;
-      }
-
-      .mockup {
-        width: 100%;
-        height: auto;
- 
-      }
-
-      .contactlink {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-      }
-      .contactlink p {
-        width: 80%;
-      }
-
-      h4 {
-        font-size: 30%;
-      }
-
-      .footerlogos {
-        height: 20px;
-      }
-      .bwslogo {
-        width: 10%;
-        height: auto;
-      }
-    }
+.bwslogo {
+  height: 38px;
+  padding-top: 5px;
+}
