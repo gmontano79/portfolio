@@ -15,24 +15,18 @@ body {
   width: 95%;
   margin: auto;
   max-width: 1000px;
-
-
 }
 
 /* HEADER SECTION */
 .header {
   padding: 10px;
-
   background-color: rgb(204, 202, 202);
-
   position: relative;
 }
 
 .gminfo {
   display: flex;
-
   align-items: center;
-
   justify-content: flex-end;
 }
 
@@ -69,11 +63,9 @@ body {
   flex-grow: 1;
   flex-shrink: 2;
 }
-
 a:-webkit-any-link {
   text-decoration: none;
 }
-
 a:visited {
   color: gray;
   flex-grow: 1;
@@ -103,12 +95,10 @@ a:visited {
   top: 42px;
   transform: rotate(90deg);
 }
-
 .github {
   width: 32px;
   padding-right: 10px;
 }
-
 .linkedin {
   width: 82px;
 }
@@ -126,7 +116,6 @@ main {
   position: relative;
   height: 50px;
 }
-
 .wcimg h2 {
   padding-left: 15px;
   position: absolute;
@@ -135,7 +124,6 @@ main {
   color: white;
   font-size: 1em;
 }
-
 .linksbar {
   width: 100%;
   height: 100%;
@@ -148,7 +136,6 @@ main {
   justify-content: space-between;
   align-content: flex-end;
 }
-
 .aboutme h2 {
   width: 100%;
   text-align: center;
@@ -157,30 +144,22 @@ main {
   text-shadow: 3px 3px 5px rgb(20, 20, 20);
   
 }
-
 .aboutme p {
   width: 100%;
   padding: 20px;
   font-size: 0.8em;
   text-align: justify;
 }
-
 .aboutme:hover {
   background-color: rgb(87, 99, 110);
 }
 
 /* MY WORK */
-.note {
-  font-size: .5em;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+
 
 .mywork {
-  /* border: 3px solid red; */
   padding-left: 30px;
   padding-right: 30px;
-
 }
 
 .mywork h2 {
@@ -191,29 +170,24 @@ main {
   padding-bottom: 20px;
 }
 .mywork h4 {
-font-size: 0.7em;
+font-size: 0.5em;
 padding: 10px 0;
+text-align: justify;
 }
 span {
  color: rgb(8, 8, 8);
  font-weight: bold;
  background-color: aqua;
 }
-
-.div-mywork {
+.div-mywork .boxes{
  
   width: 100%;
-}
-
-.boxes {
- width: 100%;
 }
 
 h3 {
   padding-top: 25px;
   padding-bottom: 10px;
 }
-
 .mockup {
 
   height: auto;
@@ -312,13 +286,8 @@ footer {
 .gminfo h1 {
   font-size: 50px;
 }
-
 .nav a {
- 
-  font-size: 1.5em;
-}
-.note {
-  font-size: .7em;
+   font-size: 1.5em;
 }
 }
 
@@ -347,7 +316,9 @@ footer {
 .apis {
   width: 43%;
 }
-
+.mywork h4 {
+  font-size: 0.7em;
+   text-align: justify;
 }
 
 /*   ********************** SCREEN MEDIA 900PX */
@@ -386,7 +357,10 @@ padding: 10px 30px;
 .aboutme p {
   border-left: 3px solid aqua;
 }
-
+.mywork h4 {
+  width: 100%;
+  padding-left: 230px;
+}
 .div-mywork {
   display: flex;
   /* flex-wrap: wrap; */
