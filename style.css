@@ -16,7 +16,7 @@ body {
   margin: auto;
   max-width: 1000px;
 
-  border: 3px solid yellow;
+
 }
 
 /* HEADER SECTION */
@@ -170,11 +170,16 @@ main {
 }
 
 /* MY WORK */
+.note {
+  font-size: .5em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 .mywork {
   /* border: 3px solid red; */
-  padding: 30px;
-
+  padding-left: 30px;
+  padding-right: 30px;
 
 }
 
@@ -211,7 +216,7 @@ h3 {
 
 .mockup {
 
-  height: 250px;
+  height: auto;
   width: 100%;
   border: 5px solid rgb(87, 87, 87);
   box-shadow: 10px 10px 10px rgb(44, 44, 44);
@@ -290,4 +295,147 @@ footer {
 .bwslogo {
   height: 38px;
   padding-top: 5px;
+}
+
+/*  *****************************   MEDIA QUERY ************************ */
+
+
+/*      *************************  SCREEN MEDIA 430PX ****************** */
+
+@media screen and (min-width: 430px)  {
+  .gminfo {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.gminfo h1 {
+  font-size: 50px;
+}
+
+.nav a {
+ 
+  font-size: 1.5em;
+}
+.note {
+  font-size: .7em;
+}
+}
+
+/* ***********SCREEN MEDIA 720PX************************** */
+
+@media screen and (min-width: 720px)  {
+  .gminfo {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.gminfo h1 {
+  font-size: 50px;
+}
+
+.mockup2-3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.cal{
+  width: 40%;
+}
+.apis {
+  width: 43%;
+}
+
+}
+
+/*   ********************** SCREEN MEDIA 900PX */
+
+@media screen and (min-width: 900px)  {
+
+.header{
+  display: flex;
+}
+
+.gminfo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav{
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1em;
+}
+
+.aboutme {
+
+display: flex;
+align-items: center ;
+padding: 10px 30px;
+}
+.aboutme h2{
+  font-size: 1.5em;
+  width: 30%;
+}
+.aboutme p {
+  border-left: 3px solid aqua;
+}
+
+.div-mywork {
+  display: flex;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  align-items: center;
+}
+.mywork h2 {
+  font-size: 1.5em;
+  width: 30%;
+}
+
+  
+
+.boxes {
+ width: 100%;
+ border-left: 3px solid aqua;
+ padding-left: 10px;
+}
+
+.contactme {
+  display: flex;
+  align-items: center ;
+padding: 10px 30px;
+}
+.contactme h2 {
+  font-size: 1.5em;
+  width: 30%;
+}
+.contactlink{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-around;
+  font-size: 1em;
+}
+.contactlink a {
+ padding-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
