@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --textshadow: text-shadow: 2px 2px 3px rgb(69, 68, 68);
+}
+
+body {
+  background-image: url(../img/dark\ backgrouns.jpg);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 95%;
+  margin: auto;
+  max-width: 1000px;
+}
+
+/* HEADER SECTION */
+.header {
+  padding: 10px;
+  background-color: rgb(204, 202, 202);
+  position: relative;
+}
+
+.gminfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#gmphoto {
+  height: 100px;
+  border: 2px solid aqua;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.gminfo h1 {
+  padding-left: 10px;
+  text-shadow: 2px 2px 3px rgb(69, 68, 68);
+}
+
+/* NAVIGATION MENU */
+.nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.nav a {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(97, 96, 96);
+  font-weight: bold;
+  font-size: 1.2em;
+  flex-grow: 1;
+  flex-shrink: 2;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+}
+a:visited {
+  color: gray;
+  flex-grow: 1;
+  flex-shrink: 2;
+}
+
+/* NAVIGATION MENU HOVER LINKS */
+
+.nav a:hover {
+  background-color: rgb(196, 243, 243);
+  padding: 2px;
+  color: darkblue;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 3px 3px 10px grey;
+}
+
+/* GITHUB AND LINKEDIN LINKS */
+
+.smlogos {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 39px;
+  position: absolute;
+  right: -46px;
+  top: 42px;
+  transform: rotate(90deg);
+}
+.github {
+  width: 32px;
+  padding-right: 10px;
+}
+.linkedin {
+  width: 82px;
+}
+
+/* MAIN SECTION */
+main {
+  background-color: rgb(112, 112, 112);
+  color: white;
+}
+
+/* MAIN SECTION BEGINING IMAGE */
+.wcimg {
+  
+  opacity: 90;
+  position: relative;
+  height: 50px;
+}
+.wcimg h2 {
+  padding-left: 15px;
+  position: absolute;
+  bottom: 15px;
+  right: 50px;
+  color: white;
+  font-size: 1em;
+}
+.linksbar {
+  width: 100%;
+  height: 100%;
+}
+
+/* ABOUT ME */
+.aboutme {
+  height: auto;
+  padding: 5px;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+.aboutme h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  display: block;
+  text-shadow: 3px 3px 5px rgb(20, 20, 20);
+  
+}
+.aboutme p {
+  width: 100%;
+  padding: 20px;
+  font-size: 0.8em;
+  text-align: justify;
+}
+.aboutme:hover {
+  background-color: rgb(87, 99, 110);
+}
+
+/* MY WORK */
+
+
+.mywork {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.mywork h2 {
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgb(20, 20, 20);
+  padding-bottom: 20px;
+}
+.mywork h4 {
+font-size: 0.5em;
+padding: 10px 0;
+text-align: justify;
+}
+span {
+ color: rgb(8, 8, 8);
+ font-weight: bold;
+ background-color: aqua;
+}
+.div-mywork .boxes{
+ 
+  width: 100%;
+}
+
+h3 {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+.mockup {
+
+  height: auto;
+  width: 100%;
+  border: 5px solid rgb(87, 87, 87);
+  box-shadow: 10px 10px 10px rgb(44, 44, 44);
+  transition: all 0.2s ease-in-out;
+}
+
+.mywork:hover {
+  background-color: rgb(87, 99, 110);
+}
+
+.mockup:hover {
+  transform: scale(0.9);
+}
+
+/* CONTACT ME */
+.contactme {
+  /* border: 3px solid red; */
+  padding: 30px;
+
+}
+
+.contactme h2 {
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgb(20, 20, 20);
+  padding-bottom: 10px;
+;
+}
+
+.contactlink {
+
+  border-left: 3px solid aqua;
+  width: 100%;
+  padding-left: 10px;
+ 
+}
+
+.contactlink p {
+  font-size: 1em;
+  width: 100%;
+  text-decoration: none;
+  padding-bottom: 5px;
+
+}
+
+.contactlink  a {
+  font-size: 1em;
+  width: 100%;
+  text-decoration: none;
+  padding-bottom: 30px;
+
+}
+
+.contactlink a:visited {
+  color: rgb(250, 252, 250);
+}
+
+.contactme:hover {
+  background-color: rgb(87, 99, 110);
+}
+
+/* FOOTER SECTION */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer h4 {
+  color: white;
+  font-size: 0.5em;
+}
+
+.bwslogo {
+  height: 38px;
+  padding-top: 5px;
+}
+
+/*  *****************************   MEDIA QUERY ************************ */
+
+
+/*      *************************  SCREEN MEDIA 430PX ****************** */
+
+@media screen and (min-width: 430px)  {
+  .gminfo {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.gminfo h1 {
+  font-size: 50px;
+}
+.nav a {
+   font-size: 1.5em;
+}
+}
+
+/* ***********SCREEN MEDIA 720PX************************** */
+
+@media screen and (min-width: 720px)  {
+  .gminfo {
+    idth: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.gminfo h1 {
+  font-size: 50px;
+}
+
+.mockup2-3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.cal{
+  width: 40%;
+}
+.apis {
+  width: 43%;
+}
+.mywork h4 {
+  font-size: 0.7em;
+   text-align: justify;
+}
+
+/*   ********************** SCREEN MEDIA 900PX */
+
+@media screen and (min-width: 900px)  {
+
+.header{
+  display: flex;
+}
+
+.gminfo {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav{
+  width: 60%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1em;
+}
+
+.aboutme {
+
+display: flex;
+align-items: center ;
+padding: 10px 30px;
+}
+.aboutme h2{
+  font-size: 1.5em;
+  width: 30%;
+}
+.aboutme p {
+  border-left: 3px solid aqua;
+}
+.mywork h4 {
+  width: 100%;
+  padding-left: 230px;
+}
+.div-mywork {
+  display: flex;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  align-items: center;
+}
+.mywork h2 {
+  font-size: 1.5em;
+  width: 30%;
+}
+
+  
+
+.boxes {
+ width: 100%;
+ border-left: 3px solid aqua;
+ padding-left: 10px;
+}
+
+.contactme {
+  display: flex;
+  align-items: center ;
+padding: 10px 30px;
+}
+.contactme h2 {
+  font-size: 1.5em;
+  width: 30%;
+}
+.contactlink{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-around;
+  font-size: 1em;
+}
+.contactlink a {
+ padding-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
